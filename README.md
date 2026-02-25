@@ -25,6 +25,7 @@ A modern, responsive e-commerce platform built with React, TypeScript, Tailwind 
 ## Quick Start
 
 ### Prerequisites
+
 - Node.js 16+ and npm
 - Supabase account (free at https://supabase.com)
 
