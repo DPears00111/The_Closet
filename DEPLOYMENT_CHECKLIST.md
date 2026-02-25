@@ -47,7 +47,7 @@ Complete this checklist before deploying to Vercel:
 
 ## CORS & Security
 
-- [ ] Supabase CORS settings allow your Vercel domain
+- [ ] Supabase CORS settings allow your Netlify domain
 - [ ] All sensitive data uses Supabase auth/RLS
 - [ ] Environment variables don't expose secrets in frontend code
 - [ ] Public key used for Supabase client (not secret key)
@@ -56,12 +56,14 @@ Complete this checklist before deploying to Vercel:
 
 - [ ] All code committed to Git
 - [ ] Git repository pushed to GitHub/GitLab/Bitbucket
-- [ ] Vercel project created and connected to Git repo
-- [ ] Environment variables added to Vercel project settings:
+- [ ] Netlify account created and connected to Git repo
+- [ ] Environment variables added to Netlify Site settings:
   - [ ] `VITE_SUPABASE_URL`
   - [ ] `VITE_SUPABASE_PUBLISHABLE_KEY`
   - [ ] `VITE_SUPABASE_PROJECT_ID`
-- [ ] GitHub/GitLab/Bitbucket repository is public or Vercel has access
+- [ ] Build settings configured in Netlify:
+  - [ ] Build command: `npm run build`
+  - [ ] Publish directory: `dist`
 
 ## Post-Deployment Verification
 
@@ -77,13 +79,13 @@ After deploying, test the live site:
 
 ## Performance (Optional)
 
-- [ ] Check Vercel Analytics for performance metrics
+- [ ] Check Netlify Analytics for performance metrics
 - [ ] Verify build time is reasonable
 - [ ] Check production bundle size isn't excessive
 
 ## Next Steps
 
 1. Fix any issues from the checklist above
-2. Deploy to Vercel via Git push or Vercel CLI
+2. Deploy to Netlify via Git connection (auto-builds on push)
 3. Test live site thoroughly
-4. Monitor Vercel deployment logs for any runtime errors
+4. Monitor Netlify build logs and function logs for errors
