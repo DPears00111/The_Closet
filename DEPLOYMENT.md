@@ -101,6 +101,7 @@ Ensure your Supabase project's CORS settings allow requests from your Netlify do
 ## Configuration
 
 The `netlify.toml` file automatically configures:
+
 - Build command and output directory
 - SPA routing (all routes redirect to index.html)
 - Cache headers for optimal performance
